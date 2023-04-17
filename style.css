@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans serif;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: url(./media/fond.jpg) 50% 50% no-repeat cover; */
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url(./media/fond.jpg) no-repeat 50% 1%;
+    background-size: cover;
+    min-width: 500px;
+}
+
+.container {
+    width: 1200px;
+    height: 1000px;
+    margin: auto;
+}
+/* ************************ LIMITE HAUTE **************************** */
+.limiteHaute {
+    width: 120px;
+    height: 115px;
+    margin: 45px auto 0 auto;
+}
+.limiteHaute p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color:  #bdbec0;
+    margin-bottom: 20px;
+}
+
+.limiteHaute input:focus {
+    /* border: 3px solid blue; */
+    outline: 6px solid rgba(75, 207, 255, .75);
+}
+.limiteHaute input:not(:hover) {
+    outline: none;
+}
+
+#number {
+    background-color:  rgba(255, 255, 255, 0.3);
+    text-align: center;
+    /* padding-left: 45px; */
+    border-radius: 15px;
+    width: 120px;
+    height: 80px;
+    color: white;
+    border: none;
+    font-size: 52px;
+}
+
+/* ************************** INCREMENTATION DECREMENTATION ******************** */
+.incrementation-decrementation {
+    margin: 20px 82px;
+    /* margin: 65px auto 0 auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.premierBouton-decrementer { 
+    width: 100px;
+    height: 100px;
+    border-radius: 15px 15px 0 0;
+    background-color: #4bcfff;
+    border: none;
+    color: white;
+    font-size: 52px;
+    text-align: center;
+}
+.premierBouton {
+    display: flex;
+    flex-direction: column;  
+}
+.premierBouton-decrementer:hover {
+    background-color: #9ae2fc;
+}
+.premierBouton-decrementer:active {
+    color: #4bcfff;
+    background-color: white;
+}
+.premierBouton-decrementer:focus {
+    outline: none;
+    background-color: #9ae2fc;
+}
+.incrementation-decrementation input {
+    border-radius: 0px 0px 15px 15px;
+    background-color:  rgba(255, 255, 255, 0.3);
+    width: 100px;
+    height: 100px;
+    border: none;
+    color: white;
+    font-size: 52px;
+    text-align: center;
+    padding-left: 15px;
+}
+.incrementation-decrementation input:hover {
+    border:  6px solid rgba(75, 207, 255, .75);
+}
+.incrementation-decrementation input:focus {
+    /* border: 6px solid rgba(75, 207, 255, .75); */
+    border: none;
+    outline: 6px solid rgba(75, 207, 255, .75);
+}
+.incrementation-decrementation input:not(:hover) {
+    /* border:  6px solid rgba(75, 207, 255, .75); */
+    /* border:  none;*/
+    outline: none;
+    /* outline: 6px solid rgba(75, 207, 255, .75); */
+}
+.incrementation-decrementation input:focus-visible {
+    border  : 6px solid rgba(75, 207, 255, .75);
+}
+
+.afficheNombre  {
+    font-size: 216px;
+    color: white;
+    /* align-items: center; */
+}
+.deuxiemeBouton {
+    display: flex;
+    flex-direction: column;  
+}
+
+/* ************************ LIMITE BASSE ********************* */
+
+.limiteBasse {
+    width: 120px;
+    height: 115px;
+    margin: 20px auto;
+}
+.limiteBasse p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color:  #bdbec0;
+    margin-bottom: 17px;
+}
+.limiteBasse input:focus {
+    outline: 6px solid rgba(75, 207, 255, .75);
+}
+.limiteBasse input:not(:hover) {
+    outline: none;
+}
+
+.reset {
+    width: 155px;
+    height: 90px;
+    margin: 32px auto 0 auto;
+}
+.reset button{
+    background-color: #4bcfff;  
+    color: white;
+    font-size: 36px;
+    width: 150px;
+    height: 80px;
+    border: none;
+    border-radius: 15px;
+    margin: auto;
+}
+.reset button:hover {
+    background-color: #9ae2fc;
+}
+.reset button:focus {
+    background-color: #9ae2fc;
+    outline: none                   ;
+}
+
+/* *************************** ZONE DE CLIC *********************** */
+.zone-clic {
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    color:  #bdbec0;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+.espace-clic {
+    background-color:rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    width: 1200px;
+    height: 240px;
+    padding-top: 85px;
+    padding-left: 406px;
+}
+.espace-clic p {
+    font-size: 2rem;
+    color: white;
+    width: 500px;
+}
